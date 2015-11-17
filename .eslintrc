@@ -1,0 +1,26 @@
+{
+  // I want to use babel-eslint for parsing!
+  "parser": "babel-eslint",
+
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+
+  "rules": {
+    "curly": [0],
+    "consistent-return": [0],
+    "quotes": [2, "single"],
+    "strict": [2, "never"],
+    "eol-last": [0],
+    "no-mixed-requires": [0],
+    "no-underscore-dangle": [0],
+    "no-use-before-define": [0],
+    "no-process-exit": [0],
+    "camelcase": [0],
+
+    "new-cap": [2, {
+      "capIsNewExceptions": ["Router", "Schema"]
+    }]
+  }
+}

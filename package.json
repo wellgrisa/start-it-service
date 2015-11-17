@@ -1,0 +1,35 @@
+{
+  "name": "treinebem-oab-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "provision": "node ./lib/provision",
+    "start": "npm run provision && supervisor --harmony --watch lib ./bin/server.js"
+  },
+  "author": "Mateus de Oliveira Barragana",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.6.14",
+    "body-parser": "^1.13.3",
+    "cors": "^2.5.0",
+    "express": "^4.13.3",
+    "harmony-reflect": "^1.4.0",
+    "jsonwebtoken": "^5.0.4",
+    "mongoose": "^4.1.2",
+    "morgan": "^1.6.1",
+    "password-hash": "^1.2.2",
+    "rsvp": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.23",
+    "chai": "^1.9.1",
+    "eslint": "^0.24.0",
+    "mocha": "^1.18.2",
+    "sinon": "^1.11.1",
+    "superagent": "~0.18.2",
+    "supertest": "^0.14.0",
+    "supervisor": "^0.7.1"
+  }
+}
